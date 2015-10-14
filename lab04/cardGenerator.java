@@ -43,9 +43,5 @@ public class cardGenerator {
             suits = "Diamonds";
         }
         System.out.println("you picked the " + cardNum + " of " + suits);
-        System.out.println("you picked the " + cardNum + " of " + suits);
-        System.out.println("you picked the " + cardNum + " of " + suits);
-        System.out.println("you picked the " + cardNum + " of " + suits);
-        System.out.println("you picked the " + cardNum + " of " + suits);
     }
-}
+} 
