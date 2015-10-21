@@ -67,7 +67,7 @@ public class Twisty {
                 if (i == j && counter <= length) {//if statement that prints out "#"
                     System.out.print("#");
                     counter++;
-                } else if ((width - 1 - j == i && counter <= length)) {//if statement that prints out "/"
+                } else if ((width - 1 - j == i && counter <=length)) {//if statement that prints out "/"
                     System.out.print("/");
                     counter++;
                     
