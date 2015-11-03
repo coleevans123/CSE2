@@ -17,7 +17,6 @@ public class Arrays {
         for(int i = 0; i < x; i++) {
             students[i] = scan.next();
         }
-        int y = (int) (Math.random()*100);
         int[] midterm = new int[x];
         
         for(int j = 0; j < x; j++){
