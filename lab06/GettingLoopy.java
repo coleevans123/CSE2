@@ -20,6 +20,7 @@ public class GettingLoopy {
         } System.out.println();
         int factor = 2;
         int inputValue = 10;
+        System.out.print("while loop: ");
         while (inputValue <= 100) {
             while(inputValue > factor) {
                 if (inputValue % factor == 0) {
@@ -32,6 +33,15 @@ public class GettingLoopy {
             factor = 2;
         
        } System.out.println();
+       factor = 2;
+       System.out.print("for loop: ");
+       for(inputValue = 10; inputValue <= 100; System.out.print(inputValue + " "), inputValue++, factor = 2) {
+           for(factor = 2; inputValue > factor; factor++) {
+               if (inputValue % factor == 0) {
+                   inputValue++;
+               }
+           }
+       }
         
     }
 }

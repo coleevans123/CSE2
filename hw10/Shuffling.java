@@ -24,27 +24,28 @@ shuffle(cards);//shuffle method that shuffles the cards in the Array
 printArray(cards);//calls the print method and prints the new shuffled deeck
 hand = randomizeHand(cards);
 System.out.println("randomized hand");
-printArray(hand);//calls the print method and prints the 5 randomly
-  }
+printArray(hand);//calls the print method and prints the 5 randomly chosen cards
+  }//end of main method
   
-public static void printArray(String[] list) {
+public static void printArray(String[] list) {//print array method
     for (int i = 0; i < list.length; i++) {
         System.out.print(list[i] + " ");
     }
-}
+}//end of print method
 
-public static void shuffle(String[] b) {
+public static void shuffle(String[] b) {//shuffle method
     int i = 0;
     String temp = "";
     for(i = 0; i < 60; i++) {
-        int x = (int)(Math.random()*51);
+        int x = (int)(Math.random()*51);//swaps the first card with another card multiple times
         temp = b[x];
         b[x] = b[0];
         b[0] = temp;
     }
     
-}
-public static String[]  randomizeHand(String[] a) {
+}//end of shuffle method
+
+public static String[]  randomizeHand(String[] a) {//picks five cards making sure none are the same card
     String[] hand = new String[5];
     for (int q = 0; q < hand.length; q++){
         int rand = (int)(Math.random()*51);
@@ -55,5 +56,5 @@ public static String[]  randomizeHand(String[] a) {
         System.out.print(hand[q] + " ");
     }
     return hand;
-}
-}
+}//end of randomized method
+}//end of class
