@@ -64,15 +64,21 @@ public class CSE2Linear {
     System.out.println("please enter a grade to search for");
     int key = scan.nextInt();
     
-    int j = 0;
-    for(j = 0; j < grades.length; j++) {//loop that checks if "key" is found on the list
-        if (grades[j] == key) {
-            System.out.println(key + " was found after " + j + " iterations");
+    int first = 0;
+    int last = grades.length - 1;
+    int middle = (first + last)/2;
+    for(int g = 0; first <= last; g++) {
+        if(grades[middle] < key) {
+            first = middle + 1;
+        } else if (grades[middle] == key){
+            System.out.println(key + " was found after " + g + " iterations");
             break;
-        }
-    }
-    if(j == (grades.length)) {
-        System.out.println(key + " was not found");
+        } else {
+            last = middle - 1;
+        }middle = (first + last)/2;
+    } if (first > last) {
+        System.out.println(key + " was not on the list");
+        System.out.println("");
     }
     
     
@@ -93,7 +99,7 @@ public class CSE2Linear {
     System.out.println("please enter a grade to search for");
     key = scan.nextInt();
     
-    
+    int j = 0;
     for(j = 0; j < grades.length; j++) {//searches for "key" in shuffled grades list
         if (grades[j] == key) {
             System.out.println(key + " was found after " + j + " iterations");
