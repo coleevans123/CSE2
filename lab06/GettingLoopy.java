@@ -42,6 +42,9 @@ public class GettingLoopy {
                }
            }
        }
+       
+       int smiley = (int)(Math.random()*201) + 5;
+       for(int i = 0; )
         
     }
 }

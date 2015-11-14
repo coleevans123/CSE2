@@ -15,7 +15,7 @@ public class Encrypted_x {
         
         
         int integer = 0;
-          boolean t = true;
+        boolean t = true;
         while (t) {
             if(myScanner.hasNextInt()) {
                 integer = myScanner.nextInt();
