@@ -42,9 +42,14 @@ public class GettingLoopy {
                }
            }
        }
-       
+       System.out.println();
        int smiley = (int)(Math.random()*201) + 5;
-       for(int i = 0; )
+       for(int i = 1; i < smiley; i++) {
+           if(i % 20 == 0) {
+               System.out.println();
+           }
+           System.out.print(":)");
+       }
         
     }
 }
